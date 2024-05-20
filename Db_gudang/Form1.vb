@@ -39,29 +39,17 @@ Public Class Form1
         Finally
             Conn.Close()
         End Try
-
+        TextId.Text = ""
+        TextNama.Text = ""
+        TextJumlah.Text = ""
         Viewdata()
+
     End Sub
 
     Private Sub EditButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
-        Call Koneksi()
+        Dim oForm As New Form3
 
-        Dim query As String = "UPDATE barang SET nama=@newNama, jumlah=@newJumlah WHERE id=@id"
-        Dim cmd As New MySqlCommand(query, Conn)
-        cmd.Parameters.AddWithValue("@id", TextId.Text)
-        cmd.Parameters.AddWithValue("@newNama", TextNama.Text)
-        cmd.Parameters.AddWithValue("@newJumlah", TextJumlah.Text)
-
-        Try
-            cmd.ExecuteNonQuery()
-            MsgBox("Data Berhasil di edit")
-        Catch ex As Exception
-            MessageBox.Show("Error : ", ex.Message)
-        Finally
-            Conn.Close()
-        End Try
-
-        Viewdata()
+        oForm.ShowDialog()
     End Sub
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
@@ -85,4 +73,5 @@ Public Class Form1
 
         Viewdata()
     End Sub
+
 End Class

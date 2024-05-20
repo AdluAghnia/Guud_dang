@@ -33,13 +33,15 @@ Partial Class Form1
         Me.DeleteButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(68, 50)
+        Me.Label1.Location = New System.Drawing.Point(68, 112)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 16)
         Me.Label1.TabIndex = 0
@@ -48,7 +50,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(68, 132)
+        Me.Label2.Location = New System.Drawing.Point(68, 193)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 16)
         Me.Label2.TabIndex = 1
@@ -57,7 +59,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(68, 90)
+        Me.Label3.Location = New System.Drawing.Point(68, 156)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(46, 16)
         Me.Label3.TabIndex = 2
@@ -65,57 +67,61 @@ Partial Class Form1
         '
         'TextId
         '
-        Me.TextId.Location = New System.Drawing.Point(166, 50)
+        Me.TextId.Location = New System.Drawing.Point(207, 106)
         Me.TextId.Name = "TextId"
         Me.TextId.Size = New System.Drawing.Size(258, 22)
         Me.TextId.TabIndex = 3
         '
         'TextNama
         '
-        Me.TextNama.Location = New System.Drawing.Point(166, 87)
+        Me.TextNama.Location = New System.Drawing.Point(207, 149)
         Me.TextNama.Name = "TextNama"
         Me.TextNama.Size = New System.Drawing.Size(258, 22)
         Me.TextNama.TabIndex = 4
         '
         'TextJumlah
         '
-        Me.TextJumlah.Location = New System.Drawing.Point(166, 132)
+        Me.TextJumlah.Location = New System.Drawing.Point(207, 187)
         Me.TextJumlah.Name = "TextJumlah"
         Me.TextJumlah.Size = New System.Drawing.Size(258, 22)
         Me.TextJumlah.TabIndex = 5
         '
         'InputButton
         '
-        Me.InputButton.Location = New System.Drawing.Point(73, 190)
+        Me.InputButton.Font = New System.Drawing.Font("Agency FB", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputButton.Location = New System.Drawing.Point(71, 231)
         Me.InputButton.Name = "InputButton"
-        Me.InputButton.Size = New System.Drawing.Size(75, 23)
+        Me.InputButton.Size = New System.Drawing.Size(174, 38)
         Me.InputButton.TabIndex = 6
         Me.InputButton.Text = "Input"
         Me.InputButton.UseVisualStyleBackColor = True
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(182, 190)
+        Me.EditButton.Font = New System.Drawing.Font("Agency FB", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditButton.Location = New System.Drawing.Point(487, 297)
         Me.EditButton.Name = "EditButton"
-        Me.EditButton.Size = New System.Drawing.Size(75, 23)
+        Me.EditButton.Size = New System.Drawing.Size(124, 128)
         Me.EditButton.TabIndex = 7
-        Me.EditButton.Text = "Edit"
+        Me.EditButton.Text = "EDIT DATA"
         Me.EditButton.UseVisualStyleBackColor = True
         '
         'DeleteButton
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(287, 190)
+        Me.DeleteButton.Font = New System.Drawing.Font("Agency FB", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteButton.Location = New System.Drawing.Point(639, 297)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteButton.Size = New System.Drawing.Size(133, 130)
         Me.DeleteButton.TabIndex = 8
-        Me.DeleteButton.Text = "Delete"
+        Me.DeleteButton.Text = "DELETE DATA"
         Me.DeleteButton.UseVisualStyleBackColor = True
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(392, 190)
+        Me.ClearButton.Font = New System.Drawing.Font("Agency FB", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ClearButton.Location = New System.Drawing.Point(269, 231)
         Me.ClearButton.Name = "ClearButton"
-        Me.ClearButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClearButton.Size = New System.Drawing.Size(196, 38)
         Me.ClearButton.TabIndex = 9
         Me.ClearButton.Text = "Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
@@ -123,18 +129,41 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(73, 252)
+        Me.DataGridView1.Location = New System.Drawing.Point(71, 288)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(394, 150)
         Me.DataGridView1.TabIndex = 10
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Agency FB", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(201, 34)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(118, 35)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "INPUT DATA"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Agency FB", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(596, 234)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 35)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "MENU"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.DeleteButton)
@@ -165,4 +194,6 @@ Partial Class Form1
     Friend WithEvents DeleteButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class
